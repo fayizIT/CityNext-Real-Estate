@@ -16,12 +16,27 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    mobile: {
-        type: String, // Change the type to match your mobile number requirements (e.g., String or Number)
-        required: true, // Adjust the required attribute as needed
-      },
-      
+    isBlocked :  {
+      type : Boolean,
+      default : false
   },
+
+  phone : {
+      type : Number,
+      required : true,
+      unique : true
+  },
+  isVerified : {
+      type : Boolean,
+      default : false
+  },
+  otp : {
+      type : Number
+  },
+  otpExpiresAt : {
+      type : Date
+  }
+},
   {
     timestamps: true,
   }

@@ -10,7 +10,7 @@ export default function Header() {
 
         <h1 className='font-bold text-sm sm:text-xl flex'>
             <span className='text-slate-500'>City</span>
-            <span className='text-slate-700'>Nest</span>
+            <span className='text-slate-700'>Next</span>
         </h1>
         </Link>
 
@@ -26,8 +26,8 @@ export default function Header() {
             <Link to='/about'>
             <li className='hidden sm:inline text-slate-600 hover:underline cursor-pointer'>About</li>
             </Link>
-            <Link to='/sign-in'>
-
+            
+            <Link to='/login'>
             <li className='hidden sm:inline text-slate-600 hover:underline cursor-pointer'>Sign in</li>
             </Link>
         </ul>
