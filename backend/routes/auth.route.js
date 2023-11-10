@@ -1,6 +1,6 @@
 import express from 'express';
 const router = express.Router();
-import { signup,signin,validateOtpToVerifyUser,resendOtp } from '../controllers/authController.js';
+import { signup,signin,validateOtpToVerifyUser,resendOtp } from '../controllers/auth.controller.js';
 
 
 

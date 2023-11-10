@@ -1,6 +1,6 @@
-import User from "../models/userModels.js";
+import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
-import { v4 as uuidv4 } from "uuid"
+import { v4 as uuidv4 } from "uuid";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import { errorHandler } from "../utils/errorHandler.js";
@@ -111,14 +111,14 @@ const sendverifyMail = async(name,email,userId) => {
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'xzavier.wunsch84@ethereal.email',
-        pass: 'ZQr9FdxzEfgBaPDGzx'
+        user: 'nettie.moore36@ethereal.email',
+        pass: 'EUJM41rsaudCN2ZPUY'
     }
 });
 
  try{
         const info = await transporter.sendMail({
-            from: 'xzavier.wunsch84@ethereal.email', // sender address
+            from: 'nettie.moore36@ethereal.email', // sender address
             to: email,
             subject: 'Email verification', // Subject line
             html: `<p>Hi ${name}, <b>${Otp}</b> This is your Otp number to verify your email .</p>`, // plain text body
