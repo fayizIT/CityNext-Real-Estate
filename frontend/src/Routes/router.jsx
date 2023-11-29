@@ -1,13 +1,16 @@
+import React from 'react'
 import {
     createBrowserRouter,
     createRoutesFromElements,
     Route,
   } from "react-router-dom";
-  import Root from "../Layouts/Root";
-  //Routes
+  import Root from "../Layouts/Root.jsx";
+
+
   
-  import commonRoutes from "./commonRoutes.jsx";
-import noHeaderFile from "./noHeaderFile";
+  //Routes
+import commonRoutes from "./commonRoutes.jsx";
+import noHeaderFile from "./noHeaderFile.jsx";
   // import userRoutes from "./userRoutes.jsx";
   // import adminRoutes from "./adminRoutes.jsx";
  

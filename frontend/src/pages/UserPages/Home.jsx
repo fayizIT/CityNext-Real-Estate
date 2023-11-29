@@ -10,14 +10,14 @@ function Home() {
           <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>Find your next <span className='text-slate-500'>perfect </span><br />
            place with ease</h1>
            <div className='text-gray-400 text-xs sm:text-sm'>
-            CityNext helps you find the best choice with your desired budget
+            Next helps you find the best choice with your desired budget
             <br />
             we have a wide range of properties to chose from
            </div>
 
            <div>
             <Link to={'/search '} className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'>
-            Let's CityNext . . .
+            Let's Next . . .
             </Link>
            </div>
         </div>

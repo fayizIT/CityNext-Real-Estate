@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 
-import Header from "../components/User/Header";
+import Header from "../components/Users/Header";
 
 const UserAuthLayout = () => {
 

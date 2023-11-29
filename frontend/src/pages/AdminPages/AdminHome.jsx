@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import   { useEffect, useState } from 'react'
 import axios from 'axios'
+import Sidebar from '../AdminPages/AdminHeader';
+
 
 export default function AdminHome() {
 
@@ -25,7 +27,10 @@ useEffect(()=>{
 
 
   return (
+
+    
     <div className="bg-white mb-0 p-4">
+      <Sidebar/>
   <table className="w-full bg-light border border-gray-300">
     <thead className="bg-gray-200">
       <tr>
@@ -72,9 +77,20 @@ useEffect(()=>{
           </td>
           <td className="px-4 py-2 border border-gray-300">{users.phone}</td>
           <td className="px-4 py-2 border border-gray-300">
-            <button className="text-blue-500 underline">Edit</button>
-            
-          </td>
+  <button className="text-blue-500 underline">Edit</button>
+  <button className="text-blue-500 underline  ml-4">
+    {users.isBlocked ? (
+      <span className="inline-block bg-green-500 text-white px-2 py-1 rounded-full w-24 text-center">
+        Unblocked
+      </span>
+    ) : (
+      <span className="inline-block bg-red-500 text-white px-2 py-1 rounded-full w-24 text-center">
+        Blocked
+      </span>
+    )}
+  </button>
+</td>
+
         </tr>
         ))
       }

@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import {FaSearch} from 'react-icons/fa';
 import {Link} from 'react-router-dom' ; //to navigate route
 
-export default function Header() {
+export default function UserHeader() {
   return (
     <header className='bg-slate-200 shadow-md'>
         <div className='flex justify-between max-w-6xl mx-auto p-3'>
