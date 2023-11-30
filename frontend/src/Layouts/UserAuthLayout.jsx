@@ -1,16 +1,16 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 
 
-import Header from "../components/Users/Header";
+// import Header from "../components/Header/users/UserHeader";
 
-const UserAuthLayout = () => {
+// const UserAuthLayout = () => {
 
-  return (
-    <>
-      <Header/>
-      <Outlet />
-    </>
-  );
-};
+//   return (
+//     <>
+//       <Header/>
+//       <Outlet />
+//     </>
+//   );
+// };
 
-export default UserAuthLayout;        
+// export default UserAuthLayout;        

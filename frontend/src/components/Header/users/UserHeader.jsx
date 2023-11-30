@@ -2,7 +2,7 @@
 import {FaSearch} from 'react-icons/fa';
 import {Link} from 'react-router-dom' ; //to navigate route
 
-export default function UserHeader() {
+const UserHeader= () => {
   return (
     <header className='bg-slate-200 shadow-md'>
         <div className='flex justify-between max-w-6xl mx-auto p-3'>
@@ -23,7 +23,7 @@ export default function UserHeader() {
 
             <li className='hidden sm:inline text-slate-600 hover:underline cursor-pointer'>Home</li>
             </Link>
-            <Link to='/about'>
+            <Link to='/register'>
             <li className='hidden sm:inline text-slate-600 hover:underline cursor-pointer'>About</li>
             </Link>
             
@@ -34,4 +34,7 @@ export default function UserHeader() {
         </div>
     </header>
   )
-}
+};
+
+
+export default UserHeader;
