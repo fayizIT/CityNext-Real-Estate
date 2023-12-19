@@ -1,0 +1,44 @@
+/* Header.css */
+
+.navbarStyle {
+  background: linear-gradient(to bottom, #065659, black);
+  height: 120px; /* Adjust the height as needed */
+}
+
+.navbarStyle .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbarStyle .nav-item {
+  margin-right: 20px; /* Adjust the space between each navbar item */
+}
+
+.navbarStyle .nav-link {
+  color: white;
+  padding: 10px; /* Add padding to the navbar links */
+  font-weight: bold; /* Make the text bold */
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+.logout {
+  color: white;
+  width: 50px;
+  padding-left: 15px;
+}
+
+.login-button {
+  background: linear-gradient(to bottom, #268b8f, #5c5b5b);
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  margin-left: auto; /* This will push the login button to the right */
+  padding: 5px 20px; /* Adjust padding as needed */
+}
+
+/* Align login button to the right */
+.navbarStyle .navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}

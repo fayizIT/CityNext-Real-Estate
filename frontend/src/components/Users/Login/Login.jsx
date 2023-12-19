@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from 'react-router-dom'
 import { Col, Form, Row, Button } from 'react-bootstrap';
-import FormContainer from "../forms/FormContainer";
-import React from 'react'
-import './Login.css'
-import userProfileImage from './Untitled.jpeg'; 
+import FormContainer from "../../forms/FormContainer";
 import { usersApi } from "../../../axiosApi/axiosInstance";
+import './Login.css';
+
+
 import { toast } from 'react-toastify'
 
 const Login = () => {
@@ -55,9 +55,7 @@ const Login = () => {
       <div className="hrLink text-white" >Are you an hr <Link to='/hr/login' >click here?</Link></div>
       <div className="p-5">
 
-        <div className="userProfileDiv">
-          <img src={userProfileImage} alt="User Profile" className="user-profile-image" />
-        </div>
+       
         <h1 className="heading" >SignIn</h1>
 
         <Form onSubmit={submitHandler}>
